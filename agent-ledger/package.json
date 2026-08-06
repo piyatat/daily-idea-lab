@@ -1,0 +1,41 @@
+{
+  "name": "agent-ledger",
+  "version": "0.1.0",
+  "description": "Autopsy coding-agent session logs — cost by route, cache gaps, and permission-gated digest.",
+  "type": "module",
+  "bin": {
+    "agentledger": "./bin/agentledger.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node bin/agentledger.js",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "cursor",
+    "claude",
+    "cost",
+    "tokens",
+    "cli",
+    "finops"
+  ],
+  "author": "Piyatat",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  }
+}

@@ -8,3 +8,7 @@ Home base for the daily Cursor cloud automation that:
 4. Implements the chosen work
 
 This repository is the automation’s checkout root. Implemented projects live in their own repos; notes from each run may be recorded here.
+
+## Latest run
+
+See [runs/2026-08-06.md](runs/2026-08-06.md) — **AgentLedger** MVP staged in [`agent-ledger/`](agent-ledger/).

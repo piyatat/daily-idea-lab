@@ -1,0 +1,6 @@
+# Permission-gated digest for agentledger analyze
+max_session_usd: 0.50
+require_review:
+  - git push
+  - rm -rf
+  - curl
