@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "echo": {
+      "type": "stdio",
+      "command": "./bin/echo-mcp",
+      "args": ["--data", "${PLUGIN_DATA}/echo"],
+      "cwd": "${PLUGIN_ROOT}",
+      "env": {
+        "LOG_LEVEL": "info"
+      }
+    },
+    "remote": {
+      "type": "streamable-http",
+      "url": "https://api.example.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "bad--plugin",
+  "version": "0.0.1",
+  "description": "Intentionally invalid fixture for pluginport tests."
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "leaky": {
+      "type": "streamable-http",
+      "url": "http://api.example.com/mcp",
+      "headers": {
+        "Authorization": "Bearer sk-test123456789012345678901234567890"
+      }
+    },
+    "legacy": {
+      "type": "sse",
+      "url": "https://old.example.com/sse"
+    }
+  }
+}
