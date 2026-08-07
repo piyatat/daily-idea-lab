@@ -7,4 +7,4 @@ Home base for the daily Cursor cloud automation that:
 3. Creates a new repo under `piyatat` **or** improves an overlapping existing repo
 4. Implements the chosen work
 
-This repository is the automation’s checkout root. Implemented projects live in their own repos; notes from each run may be recorded here.
+This repository is the automation’s checkout root. Implemented projects live in their own repos; notes from each run may be recorded under [`runs/`](runs/).
