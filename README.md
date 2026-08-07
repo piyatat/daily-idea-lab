@@ -18,3 +18,9 @@ chmod +x scripts/new-run.sh   # once
 ```
 
 The script refuses to overwrite an existing note. Fill in scout highlights, debate outcome, and result after the automation finishes.
+
+List existing notes (newest first):
+
+```bash
+./scripts/list-runs.sh
+```
