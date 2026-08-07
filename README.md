@@ -24,3 +24,10 @@ List existing notes (newest first):
 ```bash
 ./scripts/list-runs.sh
 ```
+
+Print the newest run note path (for editors / automation):
+
+```bash
+chmod +x scripts/latest-run.sh   # once
+./scripts/latest-run.sh
+```
