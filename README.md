@@ -31,3 +31,10 @@ Print the newest run note path (for editors / automation):
 chmod +x scripts/latest-run.sh   # once
 ./scripts/latest-run.sh
 ```
+
+Count run notes (one integer, for dashboards / CI):
+
+```bash
+chmod +x scripts/count-runs.sh   # once
+./scripts/count-runs.sh
+```
