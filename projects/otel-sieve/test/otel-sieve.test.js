@@ -98,6 +98,10 @@ test("accepts NDJSON and redacts GenAI log bodies", async () => {
   }
   assert.equal(result.output.includes("raw prompt"), false);
   assert.equal(result.output.includes("password"), false);
+
+  const repeated = processText(result.output);
+  assert.equal(repeated.ok, true);
+  assert.equal(repeated.output, result.output);
 });
 
 test("fails closed on unknown GenAI attributes", async () => {

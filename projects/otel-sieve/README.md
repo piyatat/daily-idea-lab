@@ -73,8 +73,9 @@ attributes such as `gen_ai.usage.input_tokens` are retained and normalized.
 Equivalent supported documents therefore produce byte-identical JSON. Running
 the sanitizer on its own output is idempotent.
 
-NDJSON input is emitted as one canonical JSON array. A single JSON document is
-emitted as one canonical object.
+NDJSON input is emitted as one canonical JSON array. That canonical bundle is
+accepted as input on later passes, preserving idempotence. A single JSON
+document is emitted as one canonical object.
 
 ## Failure contract
 

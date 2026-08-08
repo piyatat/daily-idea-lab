@@ -41,7 +41,7 @@ const GENAI_ATTRIBUTES = Object.freeze({
 const CONTENT_KEY =
   /(?:^|[._-])(prompt|completion|messages?|system[._-]?instructions?|tool(?:[._-]call)?[._-](?:arguments?|result)|input[._-]?content|output[._-]?content)(?:$|[._-])/i;
 const SECRET_KEY =
-  /(?:^|[._-])(secret|password|passwd|authorization|cookie|api[._-]?key|access[._-]?token|refresh[._-]?token|auth[._-]?token)(?:$|[._-])/i;
+  /(?:^|[._-])(secret|password|passwd|authorization|cookie|api[._-]?key|token|access[._-]?token|refresh[._-]?token|auth[._-]?token)(?:$|[._-])/i;
 
 const ANY_VALUE_KEYS = new Set([
   "stringValue",
@@ -119,7 +119,8 @@ function parseInput(text, context) {
   }
 
   try {
-    return [JSON.parse(trimmed)];
+    const parsed = JSON.parse(trimmed);
+    return Array.isArray(parsed) ? parsed : [parsed];
   } catch (documentError) {
     const lines = text
       .split(/\r?\n/)
