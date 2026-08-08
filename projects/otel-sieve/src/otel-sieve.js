@@ -39,7 +39,7 @@ const GENAI_ATTRIBUTES = Object.freeze({
 });
 
 const CONTENT_KEY =
-  /(?:^|[._-])(prompt|completion|messages?|system[_-]?instructions?|tool[_-]?(?:call[._-]?)?(?:arguments?|result)|input[._-]?content|output[._-]?content)(?:$|[._-])/i;
+  /(?:^|[._-])(prompt|completion|messages?|system[._-]?instructions?|tool(?:[._-]call)?[._-](?:arguments?|result)|input[._-]?content|output[._-]?content)(?:$|[._-])/i;
 const SECRET_KEY =
   /(?:^|[._-])(secret|password|passwd|authorization|cookie|api[._-]?key|access[._-]?token|refresh[._-]?token|auth[._-]?token)(?:$|[._-])/i;
 
@@ -409,7 +409,7 @@ function walk(value, path, context, parentKey = "") {
       normalized[key] = normalizeHex(child, 32, childPath, context);
     } else if (key === "spanId" || key === "parentSpanId") {
       normalized[key] = normalizeHex(child, 16, childPath, context);
-    } else if (/TimeUnixNano$/.test(key)) {
+    } else if (/timeUnixNano$/i.test(key)) {
       normalized[key] = normalizeDecimal(child, childPath, context, "invalid_timestamp");
     } else if (isSecretKey(key) || CONTENT_KEY.test(key)) {
       normalized[key] = REDACTED;
