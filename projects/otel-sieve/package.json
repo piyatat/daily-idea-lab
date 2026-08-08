@@ -1,0 +1,17 @@
+{
+  "name": "otel-sieve",
+  "version": "0.1.0",
+  "description": "Fail-closed sanitizer and canonicalizer for GenAI OTLP JSON",
+  "type": "module",
+  "bin": {
+    "otel-sieve": "./bin/otel-sieve.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/otel-sieve.js && node --check bin/otel-sieve.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

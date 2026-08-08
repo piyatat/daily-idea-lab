@@ -1,0 +1,27 @@
+{
+  "resourceSpans": [
+    {
+      "scopeSpans": [
+        {
+          "spans": [
+            {
+              "name": "future convention",
+              "traceId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "spanId": "bbbbbbbbbbbbbbbb",
+              "startTimeUnixNano": "1",
+              "endTimeUnixNano": "2",
+              "attributes": [
+                {
+                  "key": "gen_ai.future.attribute",
+                  "value": {
+                    "stringValue": "must not pass silently"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
