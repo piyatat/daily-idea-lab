@@ -38,3 +38,10 @@ Count run notes (one integer, for dashboards / CI):
 chmod +x scripts/count-runs.sh   # once
 ./scripts/count-runs.sh
 ```
+
+Print the path to a specific run note by date:
+
+```bash
+chmod +x scripts/show-run.sh   # once
+./scripts/show-run.sh 2026-08-07
+```
