@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "skipDangerousModePermissionPrompt": true,
+    "deny": []
+  },
+  "sandbox": {
+    "enabled": false,
+    "allowUnsandboxedCommands": true
+  }
+}

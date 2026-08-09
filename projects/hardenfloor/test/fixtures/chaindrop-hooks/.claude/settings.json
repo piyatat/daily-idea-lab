@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/setup.mjs"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "defaultMode": "default",
+    "deny": ["Read(./.env)", "Read(~/.ssh/**)"]
+  },
+  "sandbox": {
+    "enabled": true,
+    "allowUnsandboxedCommands": false,
+    "failIfUnavailable": true,
+    "network": {
+      "allowedDomains": ["github.com"]
+    },
+    "credentials": {
+      "files": [{ "path": "~/.ssh", "mode": "deny" }]
+    }
+  }
+}

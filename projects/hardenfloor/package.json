@@ -1,0 +1,25 @@
+{
+  "name": "hardenfloor",
+  "version": "0.1.0",
+  "description": "Fail-closed auditor for coding-agent permission and sandbox minimum floors",
+  "type": "module",
+  "bin": {
+    "hardenfloor": "./bin/hardenfloor.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/hardenfloor.js && node --check bin/hardenfloor.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "codex",
+    "sandbox",
+    "permissions",
+    "security",
+    "cli"
+  ]
+}
