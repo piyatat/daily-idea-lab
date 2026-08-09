@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # List dated run notes under runs/ (newest first).
+# Pass -q/--quiet to print paths only (one per line) for automation.
 set -euo pipefail
 
 root="$(cd "$(dirname "$0")/.." && pwd)"
@@ -22,6 +23,13 @@ fi
 # Sort by filename (YYYY-MM-DD) descending.
 IFS=$'\n' sorted=($(printf '%s\n' "${files[@]}" | sort -r))
 unset IFS
+
+if [[ "${1:-}" == "-q" || "${1:-}" == "--quiet" ]]; then
+  for f in "${sorted[@]}"; do
+    printf '%s\n' "$f"
+  done
+  exit 0
+fi
 
 printf '%s\t%s\n' "date" "path"
 for f in "${sorted[@]}"; do
