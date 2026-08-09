@@ -45,3 +45,10 @@ Print the path to a specific run note by date:
 chmod +x scripts/show-run.sh   # once
 ./scripts/show-run.sh 2026-08-07
 ```
+
+Check whether a run note exists (exit 0 = yes, 1 = no; useful in CI):
+
+```bash
+chmod +x scripts/has-run.sh   # once
+./scripts/has-run.sh 2026-08-07
+```
