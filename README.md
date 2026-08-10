@@ -9,6 +9,12 @@ Home base for the daily Cursor cloud automation that:
 
 This repository is the automation’s checkout root. Implemented projects live in their own repos; notes from each run may be recorded under [`runs/`](runs/).
 
+## Staged projects
+
+When a new MVP is implemented directly in this home-base repository, it is staged under [`projects/`](projects/).
+
+- [`ops-canary`](projects/ops-canary/) — payload-free detection of missing, late, and duplicate automation heartbeats
+
 ## Recording a run
 
 ```bash
