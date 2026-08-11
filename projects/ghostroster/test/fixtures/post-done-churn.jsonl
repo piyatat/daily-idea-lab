@@ -1,0 +1,4 @@
+{"ts":"2026-08-11T09:00:00Z","type":"subagent_spawn","parent_id":"root","child_id":"builder-1","task":"Add route"}
+{"ts":"2026-08-11T09:05:00Z","type":"tool_call","agent_id":"builder-1","tool":"Write","input":"src/routes/auth.ts"}
+{"ts":"2026-08-11T09:10:00Z","type":"task_complete","agent_id":"builder-1"}
+{"ts":"2026-08-11T09:11:00Z","type":"tool_call","agent_id":"builder-1","tool":"Read","input":"src/routes/auth.ts"}

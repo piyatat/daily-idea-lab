@@ -1,0 +1,6 @@
+{"ts":"2026-08-11T14:00:00Z","type":"tool_call","agent_id":"root","tool":"wait","input":"subagent:verifier-1"}
+{"ts":"2026-08-11T14:00:30Z","type":"tool_call","agent_id":"root","tool":"wait","input":"subagent:verifier-1"}
+{"ts":"2026-08-11T14:01:00Z","type":"tool_call","agent_id":"root","tool":"wait","input":"subagent:verifier-1"}
+{"ts":"2026-08-11T14:01:30Z","type":"tool_call","agent_id":"root","tool":"wait","input":"subagent:verifier-1"}
+{"ts":"2026-08-11T14:02:00Z","type":"tool_call","agent_id":"root","tool":"wait","input":"subagent:verifier-1"}
+{"ts":"2026-08-11T14:02:30Z","type":"tool_call","agent_id":"root","tool":"wait","input":"subagent:verifier-1"}

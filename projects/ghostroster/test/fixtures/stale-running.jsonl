@@ -1,0 +1,4 @@
+{"ts":"2026-08-05T00:00:00Z","type":"subagent_spawn","parent_id":"root","child_id":"worker-a","task":"Implement feature"}
+{"ts":"2026-08-05T00:30:00Z","type":"tool_call","agent_id":"worker-a","tool":"Read","input":"src/app.ts"}
+{"ts":"2026-08-05T01:00:00Z","type":"agent_status","agent_id":"worker-a","status":"running"}
+{"ts":"2026-08-06T12:00:00Z","type":"tool_call","agent_id":"root","tool":"Shell","input":"git status"}

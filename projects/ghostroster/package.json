@@ -1,0 +1,26 @@
+{
+  "name": "ghostroster",
+  "version": "0.1.0",
+  "description": "Find stale and orphaned subagents in coding-agent session exports before they drain your quota",
+  "type": "module",
+  "bin": {
+    "ghostroster": "./bin/ghostroster.js"
+  },
+  "scripts": {
+    "check": "node --check ./bin/ghostroster.js && node --check ./src/cli.js && node --check ./src/analyze.js && node --check ./src/parse.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agent",
+    "subagent",
+    "codex",
+    "claude-code",
+    "quota",
+    "session",
+    "audit"
+  ]
+}
