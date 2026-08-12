@@ -1,3 +1,0 @@
-{"ts":"2026-08-11T11:00:00Z","type":"subagent_spawn","parent_id":"root","child_id":"ok-1","task":"Healthy task"}
-{"ts":"2026-08-11T11:05:00Z","type":"tool_call","agent_id":"ok-1","tool":"Grep","input":"test"}
-{"ts":"2026-08-11T11:10:00Z","type":"task_complete","agent_id":"ok-1"}

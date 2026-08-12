@@ -1,4 +1,0 @@
-{"ts":"2026-08-11T08:00:00Z","type":"subagent_spawn","parent_id":"root","child_id":"explorer-1","task":"Scan auth module"}
-{"ts":"2026-08-11T08:05:00Z","type":"tool_call","agent_id":"explorer-1","tool":"Grep","input":"auth"}
-{"ts":"2026-08-11T08:10:00Z","type":"task_complete","agent_id":"explorer-1"}
-{"ts":"2026-08-11T08:11:00Z","type":"agent_status","agent_id":"explorer-1","status":"running"}

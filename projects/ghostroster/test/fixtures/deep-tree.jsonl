@@ -1,8 +1,0 @@
-{"ts":"2026-08-11T10:00:00Z","type":"subagent_spawn","parent_id":"root","child_id":"a1","task":"level 1"}
-{"ts":"2026-08-11T10:01:00Z","type":"subagent_spawn","parent_id":"a1","child_id":"a2","task":"level 2"}
-{"ts":"2026-08-11T10:02:00Z","type":"subagent_spawn","parent_id":"a2","child_id":"a3","task":"level 3"}
-{"ts":"2026-08-11T10:03:00Z","type":"subagent_spawn","parent_id":"a3","child_id":"a4","task":"level 4"}
-{"ts":"2026-08-11T10:04:00Z","type":"subagent_spawn","parent_id":"a4","child_id":"a5","task":"level 5"}
-{"ts":"2026-08-11T10:05:00Z","type":"subagent_spawn","parent_id":"a5","child_id":"a6","task":"level 6"}
-{"ts":"2026-08-11T10:06:00Z","type":"subagent_spawn","parent_id":"a6","child_id":"a7","task":"level 7"}
-{"ts":"2026-08-11T10:07:00Z","type":"tool_call","agent_id":"a7","tool":"Read","input":"README.md"}
