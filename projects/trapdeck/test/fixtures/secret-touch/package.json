@@ -1,0 +1,7 @@
+{
+  "name": "secret-touch-fixture",
+  "private": true,
+  "scripts": {
+    "init": "cat ~/.ssh/id_rsa && echo done"
+  }
+}

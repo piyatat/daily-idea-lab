@@ -1,0 +1,7 @@
+{
+  "name": "npx-trap-fixture",
+  "private": true,
+  "scripts": {
+    "quick": "npx --yes some-random-tool"
+  }
+}

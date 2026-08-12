@@ -1,0 +1,10 @@
+{
+  "name": "nested-trap-fixture",
+  "private": true,
+  "scripts": {
+    "a": "npm run b",
+    "b": "npm run c",
+    "c": "npm run d",
+    "d": "echo deep"
+  }
+}
