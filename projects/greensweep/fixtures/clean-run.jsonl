@@ -1,0 +1,1 @@
+{"run_id":"clean-001","status":"success","bytes_written":4096,"artifacts":["dist/report.json","dist/summary.md"],"tool_calls":12,"files_touched":3,"duration_ms":84200,"events":["plan: scope feature","tool: edit src/app.js","tool: run tests","verify: all checks passed"]}

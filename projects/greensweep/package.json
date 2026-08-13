@@ -1,0 +1,26 @@
+{
+  "name": "greensweep",
+  "version": "0.1.0",
+  "description": "Catch agent runs that report success but produce zero real output — the silent green failure mode",
+  "type": "module",
+  "bin": {
+    "greensweep": "./bin/greensweep.js"
+  },
+  "scripts": {
+    "check": "node --check ./bin/greensweep.js && node --check ./src/cli.js && node --check ./src/parse.js && node --check ./src/rules.js && node --check ./src/scan.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agent",
+    "silent-failure",
+    "verification",
+    "jsonl",
+    "ci",
+    "grok",
+    "cursor"
+  ]
+}

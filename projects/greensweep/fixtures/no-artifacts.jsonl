@@ -1,0 +1,1 @@
+{"run_id":"missing-001","status":"success","bytes_out":128,"expects_artifacts":true,"artifacts":["(missing)"],"tool_calls":4,"files_touched":1,"duration_ms":5400,"events":["tool: generate report","status: success"]}

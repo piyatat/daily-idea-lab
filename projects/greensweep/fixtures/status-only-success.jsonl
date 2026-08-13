@@ -1,0 +1,1 @@
+{"run_id":"shell-001","status":"success","bytes_out":2048,"artifacts":["log.txt"],"tool_calls":2,"files_touched":1,"duration_ms":3000,"events":["status: started","lifecycle: running","heartbeat: ok","status: finished"]}
