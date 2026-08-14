@@ -1,0 +1,4 @@
+{"type":"tool_call","tool":"Read","args":{"path":"src/cli.js"},"turn_id":1,"timestamp":"2026-08-14T10:00:00.000Z"}
+{"type":"tool_call","tool":"Read","args":{"path":"src/scan.js"},"turn_id":1,"timestamp":"2026-08-14T10:00:01.000Z"}
+{"type":"tool_call","tool":"Grep","args":{"pattern":"export function","path":"src"},"turn_id":1,"timestamp":"2026-08-14T10:00:02.000Z"}
+{"type":"tool_call","tool":"Write","args":{"path":"out/report.json","contents":"{}"},"turn_id":2,"timestamp":"2026-08-14T10:00:10.000Z"}

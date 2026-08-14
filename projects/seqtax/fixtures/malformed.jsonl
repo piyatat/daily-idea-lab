@@ -1,0 +1,3 @@
+{"type":"tool_call","tool":"Read","args":{"path":"ok.js"},"turn_id":1}
+not valid json
+{"type":"tool_call","tool":"Glob","args":{"glob_pattern":"*.js"},"turn_id":1}
