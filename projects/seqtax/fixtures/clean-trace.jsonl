@@ -1,3 +1,0 @@
-{"type":"tool_call","tool":"Read","args":{"path":"src/a.js"},"turn_id":1,"timestamp":"2026-08-14T10:00:00.000Z"}
-{"type":"tool_call","tool":"Write","args":{"path":"src/b.js","contents":"x"},"turn_id":2,"timestamp":"2026-08-14T10:00:05.000Z"}
-{"type":"tool_call","tool":"Read","args":{"path":"src/b.js"},"turn_id":3,"timestamp":"2026-08-14T10:00:10.000Z"}

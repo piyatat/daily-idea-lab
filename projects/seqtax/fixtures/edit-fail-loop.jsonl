@@ -1,4 +1,0 @@
-{"type":"tool_call","tool":"Edit","args":{"path":"src/app.js","old_string":"foo","new_string":"bar"},"turn_id":1,"timestamp":"2026-08-14T10:00:00.000Z"}
-{"type":"tool_call","tool":"Edit","args":{"path":"src/app.js","old_string":"foo","new_string":"bar"},"turn_id":1,"timestamp":"2026-08-14T10:00:01.000Z"}
-{"type":"tool_call","tool":"Edit","args":{"path":"src/app.js","old_string":"foo","new_string":"bar"},"turn_id":1,"timestamp":"2026-08-14T10:00:02.000Z"}
-{"type":"tool_call","tool":"Edit","args":{"path":"src/app.js","old_string":"foo","new_string":"bar"},"turn_id":1,"timestamp":"2026-08-14T10:00:03.000Z"}
