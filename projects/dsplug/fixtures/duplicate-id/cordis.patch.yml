@@ -1,0 +1,6 @@
+- insert:
+    - id: timer
+      name: '@deepseek-ai/cordis-plugin-timer'
+
+    - id: timer
+      name: '@deepseek-ai/dsh-llm'

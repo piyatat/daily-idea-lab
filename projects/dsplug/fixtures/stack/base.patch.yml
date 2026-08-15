@@ -1,0 +1,15 @@
+- insert:
+    - id: timer
+      name: '@deepseek-ai/cordis-plugin-timer'
+
+    - id: hmr
+      name: '@deepseek-ai/cordis-plugin-hmr'
+
+    - id: system-prompt
+      name: '@deepseek-ai/dsh-system-prompt'
+
+    - id: llm
+      name: '@deepseek-ai/dsh-llm'
+
+- id: hmr
+  disabled: true

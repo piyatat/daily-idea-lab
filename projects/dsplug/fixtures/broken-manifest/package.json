@@ -1,0 +1,9 @@
+{
+  "name": "@example/dsh-broken-bundle",
+  "version": "0.0.1",
+  "dsh": {
+    "bundle": {
+      "patch": "./missing.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+- id: system-prompt
+  config:
+    persona: headless agent
+
+- id: ghost-row
+  disabled: true

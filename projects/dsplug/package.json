@@ -1,0 +1,26 @@
+{
+  "name": "dsplug",
+  "version": "0.1.0",
+  "description": "Linter for DeepSeek Harness Cordis plugin bundles — patch shape, row ids, and profile stack resolution",
+  "type": "module",
+  "bin": {
+    "dsplug": "./bin/dsplug.js"
+  },
+  "scripts": {
+    "check": "node --check ./bin/dsplug.js && node --check ./src/cli.js && node --check ./src/parse.js && node --check ./src/rules.js && node --check ./src/check.js && node --check ./src/stack.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "license": "MIT",
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "cordis",
+    "harness",
+    "plugin",
+    "agent",
+    "linter"
+  ]
+}
