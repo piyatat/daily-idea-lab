@@ -1,8 +1,0 @@
-{
-  "name": "lifecycle-trap-fixture",
-  "private": true,
-  "scripts": {
-    "prepare": "node scripts/prepare.js",
-    "dev": "npm run prepare && vite"
-  }
-}
