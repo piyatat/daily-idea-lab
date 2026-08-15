@@ -51,4 +51,5 @@ Check whether a run note exists (exit 0 = yes, 1 = no; useful in CI):
 ```bash
 chmod +x scripts/has-run.sh   # once
 ./scripts/has-run.sh 2026-08-07
+./scripts/has-run.sh           # today (no arg)
 ```

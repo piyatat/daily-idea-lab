@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Exit 0 when a run note exists for YYYY-MM-DD; exit 1 otherwise.
+# With no date, checks today's run (for daily automation / CI).
 set -euo pipefail
 
 root="$(cd "$(dirname "$0")/.." && pwd)"
@@ -9,13 +10,8 @@ if [[ ! -d "$runs" ]]; then
   exit 1
 fi
 
-date="${1:-}"
-if [[ -z "$date" ]]; then
-  echo "usage: $(basename "$0") YYYY-MM-DD" >&2
-  exit 2
-fi
-
-if [[ ! "$date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+date="${1:-$(date +%Y-%m-%d)}"
+if [[ -n "${1:-}" && ! "$date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
   echo "invalid date (expected YYYY-MM-DD): $date" >&2
   exit 2
 fi
