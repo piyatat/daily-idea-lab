@@ -1,0 +1,25 @@
+{
+  "name": "prnoise",
+  "version": "0.1.0",
+  "description": "Fail-closed linter for AI;DR PR prose — bloated descriptions, template theater, and missing risk signals",
+  "type": "module",
+  "bin": {
+    "prnoise": "./bin/prnoise.js"
+  },
+  "scripts": {
+    "check": "node --check ./bin/prnoise.js && node --check ./src/cli.js && node --check ./src/parse.js && node --check ./src/rules.js && node --check ./src/lint.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "license": "MIT",
+  "keywords": [
+    "pull-request",
+    "ai-slop",
+    "aidr",
+    "linter",
+    "code-review",
+    "agent"
+  ]
+}
