@@ -1,0 +1,26 @@
+{
+  "name": "assistscan",
+  "version": "0.1.0",
+  "description": "Fail-closed scanner for OpenAI Assistants API call sites before the Aug 26, 2026 shutdown",
+  "type": "module",
+  "bin": {
+    "assistscan": "./bin/assistscan.js"
+  },
+  "scripts": {
+    "check": "node --check ./bin/assistscan.js && node --check ./src/cli.js && node --check ./src/scan.js && node --check ./src/rules.js && node --check ./src/walk.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "license": "MIT",
+  "keywords": [
+    "openai",
+    "assistants-api",
+    "migration",
+    "responses-api",
+    "conversations-api",
+    "linter",
+    "ci"
+  ]
+}

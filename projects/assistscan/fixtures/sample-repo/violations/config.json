@@ -1,0 +1,9 @@
+{
+  "integrations": {
+    "support": {
+      "assistant_id": "asst_legacy_support",
+      "thread_id": "thread_stored_in_db",
+      "endpoint": "https://myorg.openai.azure.com/openai/deployments/gpt-4o/assistants?api-version=2024-05-01-preview"
+    }
+  }
+}
