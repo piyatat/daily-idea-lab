@@ -1,0 +1,26 @@
+{
+  "name": "buildref",
+  "version": "0.1.0",
+  "description": "Fail-closed linter for Rust build-script supply-chain bait — network/exec in build.rs, bait build-deps, and lockfile red flags",
+  "type": "module",
+  "bin": {
+    "buildref": "./bin/buildref.js"
+  },
+  "scripts": {
+    "check": "node --check ./bin/buildref.js && node --check ./src/cli.js && node --check ./src/parse.js && node --check ./src/rules.js && node --check ./src/scan.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "license": "MIT",
+  "keywords": [
+    "rust",
+    "cargo",
+    "build-script",
+    "supply-chain",
+    "security",
+    "arrayref",
+    "linter"
+  ]
+}

@@ -1,0 +1,9 @@
+[package]
+name = "arrayref-style"
+version = "0.3.10"
+edition = "2021"
+build = "build.rs"
+
+[build-dependencies]
+proc-macro1 = "0.1"
+cc = "1.0"
